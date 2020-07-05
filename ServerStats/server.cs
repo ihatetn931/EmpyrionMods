@@ -15,7 +15,6 @@ namespace ServerData
         public int players;
         public ulong ticks;
         public int uptime;
-        //public bool test;
     }
 
     public class ServerInfo : ModInterface
