@@ -1,6 +1,6 @@
 # EmpyrionMods
 All my empyrion Mod<br>
-<br>ServerStats</b>
+<b>ServerStats</b>
 Gets Dedistats info from Empyrion Modding Api<br>
 <code>
 public float fps;<br>
