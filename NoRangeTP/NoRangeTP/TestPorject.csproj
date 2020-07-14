@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A7C7953F-FD40-4CFB-A18F-A9407405D0FA}</ProjectGuid>
+    <ProjectGuid>{5E618897-19F7-45DE-BBE2-5BF66B39F566}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ServerStats</RootNamespace>
-    <AssemblyName>ServerStats</AssemblyName>
+    <RootNamespace>NoRangeTP</RootNamespace>
+    <AssemblyName>NoRangeTP</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,23 +29,13 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-    <Reference Include="Mif, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Mif">
       <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\Mif.dll</HintPath>
     </Reference>
     <Reference Include="ModApi">
       <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\ModApi.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\newtonsoft\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net">
       <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\protobuf-net.dll</HintPath>
@@ -56,21 +44,19 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityEngine">
+      <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>H:\Steam Games SSD\steamapps\common\Empyrion - Galactic Survival\DedicatedServer\EmpyrionDedicated_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="server.cs" />
+    <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="json.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

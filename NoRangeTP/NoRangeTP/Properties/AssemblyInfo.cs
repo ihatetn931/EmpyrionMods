@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ServerStats")]
+[assembly: AssemblyTitle("NoRangeTP")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ServerStats")]
+[assembly: AssemblyProduct("NoRangeTP")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,9 +19,8 @@ using System.Runtime.InteropServices;
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 
-
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a7c7953f-fd40-4cfb-a18f-a9407405d0fa")]
+[assembly: Guid("5e618897-19f7-45de-bbe2-5bf66b39f566")]
 
 // Version information for an assembly consists of the following four values:
 //
